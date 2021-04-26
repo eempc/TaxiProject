@@ -1,6 +1,14 @@
 # Group 2 Taxi Project Readme
 
-## Textbook quick guide
+The master branch has been seeded with the *taxi-company-stage-one* project. None of the files have been changed from the original BlueJ project.
+ 
+## Collaborators
+
+Evelyn, Jack G, Kimberley, Alexander
+
+## Textbook questions quick reference
+
+Pages 562 to 569 are in TextbookPages.pdf
 
 > Here is a possible series of development steps for the taxi company application - Page 562
 >* Enable a single passenger to be picked up and taken to her destination by a single taxi
@@ -17,9 +25,7 @@
 > you feel the order is  appropriate? Is the level of complexity of each too high, too low, or just right? Are there
 > any steps missing? Revise the list as you see fit, to suit your own view of the project
 
-> **Exercise 16.18** Are the completion criteria (tests on completion) for each stage sufficiently obvious? If so
-> document some tests
-> for each.
+> **Exercise 16.18** Are the completion criteria (tests on completion) for each stage sufficiently obvious? If so document some tests for each.
 
 > **Exercise 16.19** If you have not already done so, take a thorough look through the implementation in the taxi-company-stage-one project. Ensure that you understand how movement of the taxi is effected through its act method.
 
@@ -42,3 +48,18 @@
 
 > **Exercise 16.25** Implement additional tests and further test classes that you feel are necessary to increase your
 > level of confidence in the current implementation. Fix any errors you discover in the process of doing this.
+
+## Git quick guide
+
+1. Click the "master" dropdown tab at the top left
+2. Type in a name for the branch
+3. Click the create branch button
+4. On your local repository on your drive, type the following:
+    1. `git clone https://github.com/eempc/TaxiProject`
+    2. `git checkout -b <your branch name> origin/<your branch name>`
+5. Start making coding changes
+6. Commit changes by:
+    1. `git add <file>`
+    2. `git commit -m "<commit message>"`
+7. When done, type `git push origin` to push changes to the repository
+8. Create a Pull Request and wait for approval
