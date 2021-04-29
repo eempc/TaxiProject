@@ -53,7 +53,7 @@ Pages 562 to 569 are in TextbookPages.pdf
 
 After you've installed Git onto your computer, start up a bash terminal in the folder where you will work on.
 
-1. Click the "master" dropdown tab at the top left
+1. Click the "master" dropdown tab at the top left of the repository of this page
 2. Type in a name for the branch, e.g. "my-feature-branch"
 3. Click the create branch button
 4. On git bash, type the following:
