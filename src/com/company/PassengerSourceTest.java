@@ -1,5 +1,9 @@
+package com.company;
+
 import java.util.List;
+
 import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,25 +14,22 @@ import org.junit.Test;
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
-public class PassengerSourceTest
-{
+public class PassengerSourceTest {
     private PassengerSource source;
-    
+
     /**
      * Default constructor for test class PassengerSourceTest
      */
-    public PassengerSourceTest()
-    {
+    public PassengerSourceTest() {
     }
 
     /**
      * Sets up the test fixture.
-     *
+     * <p>
      * Called before every test case method.
      */
     @Before
-    public void setUp()
-    {
+    public void setUp() {
         TaxiCompany company = new TaxiCompany();
         source = new PassengerSource(company);
         Location taxiLocation = new Location(0, 0);
@@ -39,12 +40,11 @@ public class PassengerSourceTest
 
     /**
      * Tears down the test fixture.
-     *
+     * <p>
      * Called after every test case method.
      */
     @After
-    public void tearDown()
-    {
+    public void tearDown() {
         source = null;
     }
 
@@ -52,8 +52,7 @@ public class PassengerSourceTest
      * Test for successful pickup of a passenger.
      */
     @Test
-    public void testPickup()
-    {
+    public void testPickup() {
         assertEquals(true, source.requestPickup());
     }
 }
