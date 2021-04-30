@@ -64,4 +64,4 @@ After you've installed Git onto your computer, start up a bash terminal in the f
     1. `git add <file>`
     2. `git commit -m "<commit message>"`
 7. When done, type `git push origin` to push changes to the repository
-8. Create a Pull Request and wait for approval
+8. Create a Pull Request and wait for approval (pending release branch)
