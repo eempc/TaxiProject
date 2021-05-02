@@ -1,7 +1,7 @@
-package com.company;
-
 import static org.junit.Assert.*;
 
+import com.company.Location;
+import com.company.Passenger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
