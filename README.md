@@ -11,15 +11,23 @@ Evelyn, Jack G, Kimberley, Alexander
 Pages 562 to 569 are in TextbookPages.pdf
 
 > Here is a possible series of development steps for the taxi company application - Page 562
->* Enable a single passenger to be picked up and taken to her destination by a single taxi
+>* Enable a single passenger to be picked up and taken to her destination by a single taxi 
+>* * KM: *(complexity of this looks ok)*
 >* Provide sufficient taxis to enable multiple independent passengers to be picked up and taken to their destinations
  concurrently.
->* Enable a single passenger to be picked up and taken to his destination by a single shuttle.
->* Ensure that details are recorded of passengers for whom there is no free vehicle.
->* Enable a single shuttle to pick up multiple passengers and carry them concurrently to their destinations.
->* Provide a GUI to display the activities of all active vehicles and passengers within the simulation.
->* Ensure that taxis and shuttles are able to operate concurrently.
->* Provide all remaining functionality, including full statistical data.
+>* * KM: *(this should be broken down into further development steps to break down the build work)*
+>* Enable a single passenger to be picked up and taken to his destination by a single shuttle
+>* * KM: *(complexity of this looks ok)*.
+>* Ensure that details are recorded of passengers for whom there is no free vehicle
+>* * KM: *(complexity of this looks ok but there's a step missing in the development work for "enable a single passenger to request a pickup")*.
+>* Enable a single shuttle to pick up multiple passengers and carry them concurrently to their destinations
+>* * KM: *(complexity of this looks ok but we might need to add functionality to allow a passenger to specify if they want "pooled" with other passengers or if they want to ride alone)*.
+>* Provide a GUI to display the activities of all active vehicles and passengers within the simulation 
+>* * KM: *(complexity of this is high)*.
+>* Ensure that taxis and shuttles are able to operate concurrently
+>* * KM: *(I think this is in the wrong order and should be completed after step 1)*.
+>* Provide all remaining functionality, including full statistical data 
+>* * KM: *(too vague, complexity too high, needs broken down further and specified)*.
 
  > **Exercise 16.17** Critically assess the list of steps we have outlined, with the following questions in mind. Do
 > you feel the order is  appropriate? Is the level of complexity of each too high, too low, or just right? Are there
