@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.LinkedList;
@@ -15,11 +16,15 @@ import java.util.LinkedList;
  */
 public class Demo {
     private List<Actor> actors;
+    private ArrayList<Passenger> waitingPassengers;
+
+    private TaxiCompany company;
 
     /**
      * Constructor for objects of class Demo
      */
     public Demo() {
+        waitingPassengers = new ArrayList<>();
         actors = new LinkedList<>();
         reset();
     }
@@ -41,6 +46,12 @@ public class Demo {
         for (Actor actor : actors) {
             actor.act();
         }
+
+        for (int i = 0; i < waitingPassengers.size(); i++) {
+            if (company.requestPickup(waitingPassengers.get(i))) {
+                waitingPassengers.remove(i);
+            }
+        }
     }
 
     /**
@@ -52,16 +63,21 @@ public class Demo {
      */
     public void reset() {
         actors.clear();
-        TaxiCompany company = new TaxiCompany();
+        company = new TaxiCompany();
         Taxi taxi = new Taxi(company, new Location(10, 10));
         List<Vehicle> vehicles = company.getVehicles();
         vehicles.add(taxi);
         actors.addAll(vehicles);
 
-        Passenger passenger = new Passenger(new Location(0, 0),
-                new Location(10, 20));
+        Passenger passenger = new Passenger(new Location(0, 0), new Location(10, 20));
         if (!company.requestPickup(passenger)) {
             throw new IllegalStateException("Failed to find a pickup.");
+        }
+
+        Passenger passenger2 = new Passenger(new Location(1, 1), new Location(7, 7));
+        if (!company.requestPickup(passenger2)) {
+            //throw new IllegalStateException("Failed to find a pickup.");
+            waitingPassengers.add(passenger2);
         }
     }
 }
